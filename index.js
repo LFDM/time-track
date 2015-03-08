@@ -3,7 +3,7 @@
 'use strict';
 
 var _ = require('lodash'),
-    TimeTrack = require('./time-track');
+    TimeTrack = require('./lib/time-track');
 
 var commands = [
     'start',
