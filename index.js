@@ -25,7 +25,9 @@ function parseCommand(arg) {
 }
 
 function execute() {
-    var tt = new TimeTrack()
+    var Outputter = require('./lib/terminal-outputter');
+    var exporter = new Outputter();
+    var tt = new TimeTrack(exporter);
     var command = parseCommand(process.argv[2]);
     tt[command]();
 }
